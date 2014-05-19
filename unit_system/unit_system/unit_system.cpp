@@ -16,6 +16,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	auto emi = weight / height / height;
 
 	cout << "Height: " << height << endl;
+	cout << "  which is: " << convert<centimeter>(height) << endl;
 	cout << "Weight: " << weight << endl;
 	cout << "   EMI: " << emi << endl;
 
