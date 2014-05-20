@@ -50,10 +50,10 @@ namespace units {
 	public:
 		typedef TUnit base;
 
-		rec_unit(rep_t rep) : unit<rec_unit<TUnit>>(rep)£û£ý
+		rec_unit(rep_t rep) : unit<rec_unit<TUnit>>(rep) {}
 		rec_unit(const rec_unit& that) : unit<rec_unit<TUnit>>(that) {}
 
-		static std::string name() { return "1/" + TUnit::name(); }
+		static std::string name() { return TUnit::name() + "^-1"; }
 	};
 
 }
